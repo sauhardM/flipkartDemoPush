@@ -1,0 +1,140 @@
+2023-01-09 13:45:54.790 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:46:32.121 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:46:32.204 [main] INFO  flipkart.Pages.BasePage - Clicked on login button
+2023-01-09 13:46:32.271 [main] INFO  flipkart.Pages.BasePage - Entered mobile number
+2023-01-09 13:46:32.316 [main] INFO  flipkart.Pages.BasePage - Clicked on request OTP
+2023-01-09 13:46:34.107 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:47:00.690 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:47:00.771 [main] INFO  flipkart.Pages.BasePage - Clicked on login button
+2023-01-09 13:47:00.855 [main] INFO  flipkart.Pages.BasePage - Entered Invalid mobile number
+2023-01-09 13:47:00.911 [main] INFO  flipkart.Pages.BasePage - Clicked on request OTP
+2023-01-09 13:47:00.982 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:47:02.668 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:47:26.662 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:47:26.795 [main] INFO  flipkart.Pages.BasePage - cursor moved to login button
+2023-01-09 13:47:26.988 [main] INFO  flipkart.Pages.BasePage - cursor moved to signUp button
+2023-01-09 13:47:27.030 [main] INFO  flipkart.Pages.BasePage - Assertion passed
+2023-01-09 13:47:27.107 [main] INFO  flipkart.Pages.BasePage - Mobile number entered
+2023-01-09 13:47:27.156 [main] INFO  flipkart.Pages.BasePage - Continue button clicked
+2023-01-09 13:47:28.785 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:47:54.621 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:47:54.750 [main] INFO  flipkart.Pages.BasePage - Product entered on search bar
+2023-01-09 13:47:55.550 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:47:57.195 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:48:23.679 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:48:23.808 [main] INFO  flipkart.Pages.BasePage - Product entered on search bar
+2023-01-09 13:48:24.821 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:48:24.887 [main] INFO  flipkart.Pages.BasePage - Product opened in new page
+2023-01-09 13:48:26.856 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:48:28.447 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:48:51.914 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:48:52.041 [main] INFO  flipkart.Pages.BasePage - Product entered on search bar
+2023-01-09 13:48:54.061 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:48:54.137 [main] INFO  flipkart.Pages.BasePage - Product opened in new page
+2023-01-09 13:48:55.755 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:48:55.907 [main] INFO  flipkart.Pages.BasePage - Pincode changed
+2023-01-09 13:48:57.560 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:49:20.847 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:49:20.993 [main] INFO  flipkart.Pages.BasePage - Product entered on search bar
+2023-01-09 13:49:21.679 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:49:21.801 [main] INFO  flipkart.Pages.BasePage - Product opened in new page
+2023-01-09 13:49:23.294 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:49:23.440 [main] INFO  flipkart.Pages.BasePage - Pincode changed
+2023-01-09 13:49:23.467 [main] INFO  flipkart.Pages.BasePage - Scrolled down to add to cart button
+2023-01-09 13:49:23.523 [main] INFO  flipkart.Pages.BasePage - Clicked on add to cart button
+2023-01-09 13:49:25.159 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:49:48.452 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:49:48.594 [main] INFO  flipkart.Pages.BasePage - Product entered on search bar
+2023-01-09 13:49:49.359 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:49:49.449 [main] INFO  flipkart.Pages.BasePage - Product opened in new page
+2023-01-09 13:49:51.260 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:49:51.397 [main] INFO  flipkart.Pages.BasePage - Pincode changed
+2023-01-09 13:49:51.439 [main] INFO  flipkart.Pages.BasePage - Scrolled down to add to cart button
+2023-01-09 13:49:51.494 [main] INFO  flipkart.Pages.BasePage - Clicked on add to cart button
+2023-01-09 13:49:58.322 [main] INFO  flipkart.Pages.BasePage - Assertion passed
+2023-01-09 13:49:58.388 [main] INFO  flipkart.Pages.BasePage - Product removed from cart
+2023-01-09 13:50:00.002 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:50:23.520 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:50:28.237 [main] INFO  flipkart.Pages.BasePage - Click on become seller btn
+2023-01-09 13:50:28.314 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:50:30.585 [main] INFO  flipkart.Pages.BasePage - Clicked on start selling button
+2023-01-09 13:50:30.615 [main] INFO  flipkart.Pages.BasePage - Assertion passed
+2023-01-09 13:50:30.998 [main] INFO  flipkart.Pages.BasePage - Mobile number and email entered
+2023-01-09 13:50:31.084 [main] INFO  flipkart.Pages.BasePage - Clicked on register and continue button
+2023-01-09 13:50:32.760 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:50:56.866 [main] INFO  flipkart.Pages.BasePage - Closed popup
+2023-01-09 13:50:57.208 [main] INFO  flipkart.Pages.BasePage - Product entered on search bar
+2023-01-09 13:50:57.939 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:50:58.033 [main] INFO  flipkart.Pages.BasePage - Product opened in new page
+2023-01-09 13:50:59.895 [main] INFO  flipkart.Pages.BasePage - Assertion Passed
+2023-01-09 13:51:00.085 [main] INFO  flipkart.Pages.BasePage - Pincode changed
+2023-01-09 13:51:00.112 [main] INFO  flipkart.Pages.BasePage - Scrolled down to add to cart button
+2023-01-09 13:51:00.166 [main] INFO  flipkart.Pages.BasePage - Clicked on add to cart button
+2023-01-09 13:51:02.046 [main] INFO  flipkart.Pages.BasePage - Clicked on place order button
+2023-01-09 13:51:02.099 [main] INFO  flipkart.Pages.BasePage - Assertion passed
+2023-01-09 13:51:02.228 [main] INFO  flipkart.Pages.BasePage - Mobile number entered
+2023-01-09 13:51:02.276 [main] INFO  flipkart.Pages.BasePage - Continue button clicked
+2023-01-09 13:51:03.919 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:51:29.831 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:51:30.241 [main] INFO  flipkart.Pages.BasePage - Selecting category from dropdown
+2023-01-09 13:51:30.305 [main] INFO  flipkart.Pages.BasePage - Opened men's jacket category
+2023-01-09 13:51:31.236 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:51:32.825 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:52:21.564 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:52:21.965 [main] INFO  flipkart.Pages.BasePage - Selecting category from dropdown
+2023-01-09 13:52:22.009 [main] INFO  flipkart.Pages.BasePage - Opened men's jacket category
+2023-01-09 13:52:22.937 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:52:28.165 [main] INFO  flipkart.Pages.BasePage - Gender selected
+2023-01-09 13:52:28.290 [main] INFO  flipkart.Pages.BasePage - Flipkart assured selected
+2023-01-09 13:52:33.854 [main] INFO  flipkart.Pages.BasePage - Discount selected
+2023-01-09 13:52:34.024 [main] INFO  flipkart.Pages.BasePage - Size selected
+2023-01-09 13:52:34.317 [main] INFO  flipkart.Pages.BasePage - Amount filtered
+2023-01-09 13:52:35.961 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:53:42.196 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:53:42.349 [main] INFO  flipkart.Pages.BasePage - Cursor moved to more in navbar
+2023-01-09 13:53:42.403 [main] INFO  flipkart.Pages.BasePage - Clicked more options in navbar
+2023-01-09 13:53:54.452 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:54:38.576 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:54:38.918 [main] INFO  flipkart.Pages.BasePage - Clicked on explore plus
+2023-01-09 13:54:38.933 [main] INFO  flipkart.Pages.BasePage - Assertion passed
+2023-01-09 13:54:40.829 [main] INFO  flipkart.Pages.BasePage - Supercoin link clicked
+2023-01-09 13:54:40.940 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:54:42.562 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:55:42.362 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:55:42.370 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the bottom of the page
+2023-01-09 13:55:45.528 [main] INFO  flipkart.Pages.BasePage - Clicked on footer advertise
+2023-01-09 13:55:45.559 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:55:47.224 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:56:31.442 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:56:31.450 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the bottom of the page
+2023-01-09 13:56:33.986 [main] INFO  flipkart.Pages.BasePage - Clicked on footer advertise
+2023-01-09 13:56:34.019 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:56:34.076 [main] INFO  flipkart.Pages.BasePage - Searched Brand
+2023-01-09 13:56:35.327 [main] INFO  flipkart.Pages.BasePage - Selected brand
+2023-01-09 13:56:35.376 [main] INFO  flipkart.Pages.BasePage - Assertion passed
+2023-01-09 13:56:37.006 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:57:21.014 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:57:21.022 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the bottom of the page
+2023-01-09 13:57:22.101 [main] INFO  flipkart.Pages.BasePage - Clicked on gift card footer
+2023-01-09 13:57:22.163 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:57:23.758 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:58:07.734 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:58:07.742 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the bottom of the page
+2023-01-09 13:58:08.816 [main] INFO  flipkart.Pages.BasePage - Clicked on gift card footer
+2023-01-09 13:58:08.875 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:58:09.074 [main] INFO  flipkart.Pages.BasePage - Clicked on birthday gift cards
+2023-01-09 13:58:09.888 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:58:11.521 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:58:55.590 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:58:55.597 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the bottom of the page
+2023-01-09 13:58:56.795 [main] INFO  flipkart.Pages.BasePage - Clicked on gift card footer
+2023-01-09 13:58:56.878 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:58:56.906 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the shop by price section
+2023-01-09 13:58:56.995 [main] INFO  flipkart.Pages.BasePage - Selected gift card by price
+2023-01-09 13:58:57.902 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:58:59.533 [main] INFO  flipkart.Pages.BasePage - headless browser.
+2023-01-09 13:59:43.568 [main] INFO  flipkart.Pages.BasePage - Popup closed
+2023-01-09 13:59:43.576 [main] INFO  flipkart.Pages.BasePage - Scrolled down to the bottom of the page
+2023-01-09 13:59:47.871 [main] INFO  flipkart.Pages.BasePage - Clicked on careers option in footer
+2023-01-09 13:59:52.903 [main] INFO  flipkart.Pages.BasePage - Assertions passed
+2023-01-09 13:59:53.186 [main] INFO  flipkart.Pages.BasePage - Opening jobs at India

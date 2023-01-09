@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 60, Failures: 13, Errors: 0, Skipped: 47, Time elapsed: 1.477 s <<< FAILURE! - in TestSuite
+setup(flipkart.TestCases.LoginTest)  Time elapsed: 1.121 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+Caused by: java.lang.ClassNotFoundException: Com.JarUtils.ReadingPropertiesFile
+
+setup(flipkart.TestCases.SignUpTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.SearchProductTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.AddToCartTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.BecomeSellerTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.PlaceOrderTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.DropdownProductSearchTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.FilterProductSearchTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.customerCareTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.FlipkartPlusTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.AdvertiseTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.GiftCardTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+
+setup(flipkart.TestCases.CareersTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+

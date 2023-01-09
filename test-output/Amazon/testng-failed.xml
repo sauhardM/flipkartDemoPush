@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Functional(failed)">
+    <classes>
+      <class name="flipkart.TestCases.LoginTest">
+        <methods>
+          <include name="status"/>
+          <include name="inValidCredentialsLogin"/>
+          <include name="setup"/>
+          <include name="validCredentialsLogin"/>
+        </methods>
+      </class> <!-- flipkart.TestCases.LoginTest -->
+    </classes>
+  </test> <!-- Functional(failed) -->
+</suite> <!-- Failed suite [Amazon] -->
