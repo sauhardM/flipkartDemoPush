@@ -41,7 +41,7 @@ public class LoginPage {
 	String InvalidLoginErrorMessage = "Please enter valid Email ID/Mobile number";
 	String InvalidLoginMessageXpath = "//span[contains(text(),'Please enter valid Email ID/Mobile number')]";
 	
-	public LoginPage(WebDriver driver) {
+	public LoginPage(WebDriver driver) { 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		}

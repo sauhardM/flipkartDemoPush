@@ -9,10 +9,10 @@ import flipkart.Pages.BasePage;
 
 public class AddToCartTest extends BasePage{
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups = {"HomePage"})
 	public void addingProductToTheCart() throws Exception{
 		 
-		SearchProductTest obj = new SearchProductTest(); 
+		SearchProductTest obj = new SearchProductTest();  	
 		obj.changePincode();
 		AddToCartPage obj2 = new AddToCartPage(driver);
 		obj2.scrollDownToAddToCartButton();
@@ -24,7 +24,7 @@ public class AddToCartTest extends BasePage{
 				
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"HomePage"})
 	public void removeFromCart() throws Exception {
 		
 		addingProductToTheCart();

@@ -9,7 +9,7 @@ import flipkart.Pages.FlipkartPlusPage;
 
 public class FlipkartPlusTest extends BasePage{
 
-	@Test
+	@Test(groups = {"HomePage"})
 	public void flipkartPlusTest() throws Exception{
 		
 		FlipkartPlusPage obj = new FlipkartPlusPage(driver);

@@ -9,7 +9,7 @@ import flipkart.Pages.SearchProductPage;
 
 public class SearchProductTest extends BasePage {
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups = {"ProductPage"})
 	public void searchProduct() throws Exception{
 		
 		SearchProductPage obj = new SearchProductPage(driver);
@@ -24,7 +24,7 @@ public class SearchProductTest extends BasePage {
 		logger.info("Assertion Passed");
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"ProductPage"})
 	public void openProduct() throws Exception {
 		
 		searchProduct();
@@ -37,7 +37,7 @@ public class SearchProductTest extends BasePage {
 		logger.info("Assertion Passed");
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3,groups = {"ProductPage"})
 	public void changePincode() throws Exception {
 		
 		openProduct();

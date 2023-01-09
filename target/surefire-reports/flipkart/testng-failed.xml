@@ -3,56 +3,6 @@
 <suite name="Failed suite [flipkart]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Functional(failed)" verbose="0">
     <classes>
-      <class name="flipkart.TestCases.SignUpTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="signUpTestCase"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.SignUpTest -->
-      <class name="flipkart.TestCases.DropdownProductSearchTest">
-        <methods>
-          <include name="status"/>
-          <include name="dropDownProductSearch"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.DropdownProductSearchTest -->
-      <class name="flipkart.TestCases.PlaceOrderTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="placeOrder"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.PlaceOrderTest -->
-      <class name="flipkart.TestCases.CareersTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="testCareers"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.CareersTest -->
-      <class name="flipkart.TestCases.customerCareTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="testCustomerCareSupport"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.customerCareTest -->
-      <class name="flipkart.TestCases.BecomeSellerTest">
-        <methods>
-          <include name="becomeSeller"/>
-          <include name="status"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.BecomeSellerTest -->
-      <class name="flipkart.TestCases.AddToCartTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="addingProductToTheCart"/>
-          <include name="removeFromCart"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.AddToCartTest -->
       <class name="flipkart.TestCases.LoginTest">
         <methods>
           <include name="status"/>
@@ -61,46 +11,6 @@
           <include name="validCredentialsLogin"/>
         </methods>
       </class> <!-- flipkart.TestCases.LoginTest -->
-      <class name="flipkart.TestCases.SearchProductTest">
-        <methods>
-          <include name="openProduct"/>
-          <include name="status"/>
-          <include name="searchProduct"/>
-          <include name="setup"/>
-          <include name="changePincode"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.SearchProductTest -->
-      <class name="flipkart.TestCases.GiftCardTest">
-        <methods>
-          <include name="testGiftCards"/>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="testBirthdayGiftCards"/>
-          <include name="testShopByPriceGiftCards"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.GiftCardTest -->
-      <class name="flipkart.TestCases.FlipkartPlusTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="flipkartPlusTest"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.FlipkartPlusTest -->
-      <class name="flipkart.TestCases.AdvertiseTest">
-        <methods>
-          <include name="status"/>
-          <include name="setup"/>
-          <include name="testAdvertisement"/>
-          <include name="testBrand"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.AdvertiseTest -->
-      <class name="flipkart.TestCases.FilterProductSearchTest">
-        <methods>
-          <include name="status"/>
-          <include name="filterSearch"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- flipkart.TestCases.FilterProductSearchTest -->
     </classes>
   </test> <!-- Functional(failed) -->
 </suite> <!-- Failed suite [flipkart] -->

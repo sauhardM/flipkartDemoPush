@@ -12,7 +12,7 @@ import flipkart.Pages.LoginPage;
 public class LoginTest extends BasePage {
 	
 	
-	@Test (priority=0)
+	@Test (priority=0,groups = {"HomePage"})
 	public void validCredentialsLogin() throws InterruptedException{
 		
 		LoginPage obj = new LoginPage(driver); 
@@ -30,7 +30,7 @@ public class LoginTest extends BasePage {
 		logger.info("Clicked on request OTP");
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 1,groups = {"HomePage"})
 	public void  inValidCredentialsLogin() throws InterruptedException {
 		
 		LoginPage obj = new LoginPage(driver);

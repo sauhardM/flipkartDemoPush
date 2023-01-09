@@ -9,7 +9,7 @@ import flipkart.Pages.DropdownProductSearchPage;
 
 public class DropdownProductSearchTest extends BasePage {
 
-	@Test
+	@Test(groups = {"HomePage"})
 	public void dropDownProductSearch() throws Exception {
 		
 		DropdownProductSearchPage obj = new DropdownProductSearchPage(driver);

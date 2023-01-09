@@ -10,7 +10,7 @@ import flipkart.Pages.SignUpPage;
 public class SignUpTest extends BasePage {
 
 	
-	@Test
+	@Test(groups = {"HomePage"})
 	public void signUpTestCase() throws Exception{
 		
 		SignUpPage obj = new SignUpPage(driver);

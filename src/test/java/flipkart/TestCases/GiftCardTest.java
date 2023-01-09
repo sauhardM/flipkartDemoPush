@@ -10,7 +10,7 @@ import flipkart.Pages.GiftCardPage;
 
 public class GiftCardTest extends BasePage {
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups = {"HomePage"})
 	public void testGiftCards() {
 		
 		GiftCardPage obj = new GiftCardPage(driver);
@@ -34,7 +34,7 @@ public class GiftCardTest extends BasePage {
 		
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"HomePage"})
 	public void testBirthdayGiftCards() {
 		
 		testGiftCards();

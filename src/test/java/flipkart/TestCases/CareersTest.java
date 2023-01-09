@@ -10,7 +10,7 @@ import flipkart.Pages.GiftCardPage;
 
 public class CareersTest extends BasePage {
 
-	@Test
+	@Test(groups = {"HomePage"})
 	public void testCareers() throws Exception {
 		
 		CareersPage obj = new CareersPage(driver);

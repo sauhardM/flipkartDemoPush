@@ -1,44 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 60, Failures: 13, Errors: 0, Skipped: 47, Time elapsed: 1.477 s <<< FAILURE! - in TestSuite
-setup(flipkart.TestCases.LoginTest)  Time elapsed: 1.121 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-Caused by: java.lang.ClassNotFoundException: Com.JarUtils.ReadingPropertiesFile
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 19.907 s <<< FAILURE! - in TestSuite
+validCredentialsLogin(flipkart.TestCases.LoginTest)  Time elapsed: 0.215 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'IN-PG02P5XG', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2fd79e05dfebc61c203c7f9c20e2759, findElement {using=xpath, value=//button[contains(text(),'✕')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SAUHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54967/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2fd79e05dfebc61c203c7f9c20e2759
+	at flipkart.TestCases.LoginTest.validCredentialsLogin(LoginTest.java:19)
 
-setup(flipkart.TestCases.SignUpTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.SearchProductTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.AddToCartTest)  Time elapsed: 0.003 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.BecomeSellerTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.PlaceOrderTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.DropdownProductSearchTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.FilterProductSearchTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.customerCareTest)  Time elapsed: 0.004 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.FlipkartPlusTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.AdvertiseTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.GiftCardTest)  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
-
-setup(flipkart.TestCases.CareersTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+status(flipkart.TestCases.LoginTest)  Time elapsed: 0.222 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'IN-PG02P5XG', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2fd79e05dfebc61c203c7f9c20e2759, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SAUHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54967/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a2fd79e05dfebc61c203c7f9c20e2759
 

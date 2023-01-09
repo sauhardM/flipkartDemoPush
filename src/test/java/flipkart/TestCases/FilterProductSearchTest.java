@@ -9,7 +9,7 @@ import flipkart.Pages.FilterProductSearchPage;
 
 public class FilterProductSearchTest extends BasePage {
 
-	@Test
+	@Test(groups = {"ProductPage"})
 	public void filterSearch() throws Exception{
 		
 		DropdownProductSearchTest obj = new DropdownProductSearchTest();

@@ -9,7 +9,7 @@ import flipkart.Pages.customerCarePage;
 
 public class customerCareTest extends BasePage {
 
-	@Test
+	@Test(groups = {"HomePage"})
 	public void testCustomerCareSupport() throws Exception{
 		
 		customerCarePage obj = new customerCarePage(driver);

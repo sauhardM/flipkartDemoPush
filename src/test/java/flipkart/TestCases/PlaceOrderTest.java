@@ -9,7 +9,7 @@ import flipkart.Pages.PlaceOrderPage;
 
 public class PlaceOrderTest extends BasePage{
 
-	@Test
+	@Test(groups = {"ProductPage"})
 	public void placeOrder() throws Exception {
 		
 		AddToCartTest obj = new AddToCartTest();

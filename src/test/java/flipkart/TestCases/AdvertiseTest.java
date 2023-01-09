@@ -9,7 +9,7 @@ import flipkart.Pages.BasePage;
 
 public class AdvertiseTest extends BasePage{
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups = {"HomePage"})
 	public void testAdvertisement() throws Exception{
 		
 		AdvertisePage obj = new AdvertisePage(driver);
@@ -32,7 +32,7 @@ public class AdvertiseTest extends BasePage{
 		
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"HomePage"})
 	public void testBrand() throws Exception{
 		
 		testAdvertisement();

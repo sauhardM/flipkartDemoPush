@@ -10,7 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.TestException;
 import org.testng.annotations.AfterMethod;
@@ -22,9 +24,11 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import Com.JarUtils.ReadingPropertiesFile;
+
 import flipkart.Utilities.ExtentReportManager;
+import flipkart.Utilities.ReadingPropertiesFile;
 import flipkart.Utilities.Screenshot;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class BasePage {
@@ -32,39 +36,60 @@ public class BasePage {
 	public static WebDriver driver;
 	public static ExtentReports extent;
 	public static ExtentTest test;
+	public static String browser, Mode;
 	public static Logger logger = LogManager.getLogger(BasePage.class);
 
 	@BeforeMethod
 	public void setup(Method method) {
 
 		// setting path for all drivers
-		String browser = ReadingPropertiesFile.getProperty("browser");
+		 browser = ReadingPropertiesFile.getProperty("browser");
+		 Mode = ReadingPropertiesFile.getProperty("mode");
+		 
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
 				logger.info("opening chrome browser.");
-			    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-			    driver = new ChromeDriver();
-			    
+//			    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+			    WebDriverManager.chromedriver().setup();
+			    if (Mode.equalsIgnoreCase("Headless")) {
+					ChromeOptions options = new ChromeOptions();
+					options.addArguments("window-size= 1920, 1080");
+					options.addArguments("--headless");
+					driver = new ChromeDriver(options);
+					System.out.println("headless mode");
+				} else {
+					driver = new ChromeDriver();
+				}   
 			}
 			else if(browser.equalsIgnoreCase("edge")) {
-				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
-				driver = new EdgeDriver();
+//				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
 				logger.info("opening edge browser.");
+				WebDriverManager.edgedriver().setup();
+				if (Mode.equalsIgnoreCase("Headless")) {
+	                EdgeOptions options = new EdgeOptions();
+	                options.addArguments("window-size= 1920, 1080");
+	                options.addArguments("--headless");
+	                driver = new EdgeDriver(options);
+	                System.out.println("headless mode");
+				} else {
+					driver = new EdgeDriver();
+				}   
+				
 			}
 			else if(browser.equalsIgnoreCase("firefox")) {
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
-				driver = new FirefoxDriver();
+//				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
 				logger.info("opening firefox browser.");
-			}
-			else if(browser.equalsIgnoreCase("headless")) {
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-				ChromeOptions options = new ChromeOptions();
-				options.setHeadless(true);
-				options.addArguments("window-size=1920,1080");
-			    driver = new ChromeDriver(options);
-				logger.info("headless browser.");
-				System.out.println("headless browser");
-
+				WebDriverManager.firefoxdriver().setup();
+				if (Mode.equalsIgnoreCase("Headless")) {
+					FirefoxOptions options = new FirefoxOptions();
+	                options.addArguments("window-size= 1920, 1080");
+	                options.addArguments("--headless");
+	                driver = new FirefoxDriver(options);
+	                System.out.println("headless mode");
+				} else {
+					driver = new FirefoxDriver();
+				}   
+				
 			}
 			else {
 				Assert.assertTrue("No browser type sent",false);

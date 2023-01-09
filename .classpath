@@ -25,6 +25,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="resources"/>
-	<classpathentry kind="lib" path="C:/Users/sauhardmishra/Desktop/ReadFilePropertiesJarFile.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sauhardmishra/Downloads/Flipkart_Automation_Project/Flipkart_Automation_Project/ReadFilePropertiesJarFile.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

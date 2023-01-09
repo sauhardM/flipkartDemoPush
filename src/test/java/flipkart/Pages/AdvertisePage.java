@@ -33,7 +33,7 @@ public class AdvertisePage {
 	String advertisePageTitle = "Flipkart Brand Health, Brand Pulse, Flipkart Insights, Flipkart Advertising, Commerce Advertising Platform";
 	String Brand = "Samsung";
 	
-	public AdvertisePage(WebDriver driver) {
+	public AdvertisePage(WebDriver driver) { 
 		
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

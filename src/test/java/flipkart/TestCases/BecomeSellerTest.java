@@ -9,7 +9,7 @@ import flipkart.Pages.BecomeSellerPage;
 
 public class BecomeSellerTest extends BasePage{
 
-	@Test
+	@Test(groups = {"HomePage"})
 	public void becomeSeller() throws Exception{
 		
 		BecomeSellerPage obj = new BecomeSellerPage(driver);
