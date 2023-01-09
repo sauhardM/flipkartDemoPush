@@ -9,84 +9,39 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">flipkart</th></tr>
-<tr><td><a href="#t0">Functional</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,769</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Functional</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">73</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">flipkart</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Functional &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">flipkart.TestCases.LoginTest</td><td><a href="#m0">status</a></td><td rowspan="1">1673277784315</td><td rowspan="1">7</td></tr><tr><th colspan="4">Functional &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">flipkart.TestCases.LoginTest</td><td><a href="#m1">validCredentialsLogin</a></td><td rowspan="1">1673277784100</td><td rowspan="1">175</td></tr><tr><th colspan="4">Functional &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">flipkart.TestCases.LoginTest</td><td><a href="#m2">setup</a></td><td rowspan="1">1673277784330</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">status</a></td><td rowspan="1">1673277784334</td><td rowspan="1">0</td></tr><tr><th colspan="4">Functional &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">flipkart.TestCases.LoginTest</td><td><a href="#m4">inValidCredentialsLogin</a></td><td rowspan="1">1673277784333</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">flipkart</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Functional &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">flipkart.TestCases.LoginTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1673278735065</td><td rowspan="1">12</td></tr><tr><th colspan="4">Functional &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">flipkart.TestCases.LoginTest</td><td><a href="#m1">setup</a></td><td rowspan="1">1673278735091</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">status</a></td><td rowspan="2">1673278735086</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m3">status</a></td></tr><tr><th colspan="4">Functional &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">flipkart.TestCases.LoginTest</td><td><a href="#m4">inValidCredentialsLogin</a></td><td rowspan="1">1673278735091</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">validCredentialsLogin</a></td><td rowspan="1">1673278735085</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Functional</h2><h3 id="m0">flipkart.TestCases.LoginTest#status</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=validCredentialsLogin status=FAILURE method=LoginTest.validCredentialsLogin()[pri:0, instance:flipkart.TestCases.LoginTest@15eebbff] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;IN-PG02P5XG&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2fd79e05dfebc61c203c7f9c20e2759, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SAUHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54967/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a2fd79e05dfebc61c203c7f9c20e2759
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:331)
-	at flipkart.Utilities.Screenshot.takeScreenShot(Screenshot.java:16)
-	at flipkart.Pages.BasePage.status(BasePage.java:121)
+<h2>Functional</h2><h3 id="m0">flipkart.TestCases.LoginTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void flipkart.TestCases.LoginTest.validCredentialsLogin() throws java.lang.InterruptedException</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+	at flipkart.Pages.BasePage.setup(BasePage.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">flipkart.TestCases.LoginTest#validCredentialsLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;IN-PG02P5XG&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2fd79e05dfebc61c203c7f9c20e2759, findElement {using=xpath, value=//button[contains(text(),&apos;✕&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SAUHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54967/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a2fd79e05dfebc61c203c7f9c20e2759
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at flipkart.Pages.LoginPage.closePopup(LoginPage.java:50)
-	at flipkart.TestCases.LoginTest.validCredentialsLogin(LoginTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+Caused by: java.lang.ClassNotFoundException: Com.JarUtils.ReadingPropertiesFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 37 more
 ... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">flipkart.TestCases.LoginTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">flipkart.TestCases.LoginTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">flipkart.TestCases.LoginTest#status</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">flipkart.TestCases.LoginTest#status</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">flipkart.TestCases.LoginTest#inValidCredentialsLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;IN-PG02P5XG&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2fd79e05dfebc61c203c7f9c20e2759, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SAUHAR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54967/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a2fd79e05dfebc61c203c7f9c20e2759
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:331)
-	at flipkart.Utilities.Screenshot.takeScreenShot(Screenshot.java:16)
-	at flipkart.Pages.BasePage.status(BasePage.java:121)
+<h3 id="m4">flipkart.TestCases.LoginTest#inValidCredentialsLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+	at flipkart.Pages.BasePage.setup(BasePage.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: java.lang.ClassNotFoundException: Com.JarUtils.ReadingPropertiesFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 37 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">flipkart.TestCases.LoginTest#validCredentialsLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Com/JarUtils/ReadingPropertiesFile
+	at flipkart.Pages.BasePage.setup(BasePage.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+Caused by: java.lang.ClassNotFoundException: Com.JarUtils.ReadingPropertiesFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 37 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

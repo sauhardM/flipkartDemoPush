@@ -15,7 +15,7 @@ public class LoginTest extends BasePage {
 	@Test (priority=0,groups = {"HomePage"})
 	public void validCredentialsLogin() throws InterruptedException{
 		
-		LoginPage obj = new LoginPage(driver); 
+		LoginPage obj = new LoginPage(driver);  
 		obj.closePopup();
 		test.log(LogStatus.INFO, "Closed popup");
 		logger.info("Closed popup");

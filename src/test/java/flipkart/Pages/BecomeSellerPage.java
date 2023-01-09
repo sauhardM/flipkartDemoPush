@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class BecomeSellerPage {
 	
 	WebDriver driver;
@@ -34,15 +36,7 @@ public class BecomeSellerPage {
 	
 	@FindBy(xpath = "//span[contains(text(),'Register & Continue')]")
 	WebElement registerAndContBtnXpath;
-	
-	//TestData
-	String startSellingBtnLocator = "//div[@class='styles__RegisterContainer-sc-1kfv72o-0 ilMBvo']";
-	String becomeSellerPageTitle = "Sell Online - Become a Online Seller in India | Flipkart Seller Hub";
-	String startSellingPageTitle = "Seller Dashboard";
-	String registerAndContinueBtnLocator = "//span[contains(text(),'Register & Continue')]";
-	String mobileNumber = "8604680845";
-	String eMail = "mishra.sauhard@gmail.com";
-	
+		
 	public BecomeSellerPage(WebDriver driver) {
 		
 		this.driver = driver;
@@ -60,11 +54,11 @@ public class BecomeSellerPage {
 	public void AssertSellerPageTitle() {
 		
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(startSellingBtnLocator)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("startSellingBtnLocator"))));
 		
 		Assert.assertTrue(startSellingBtnXpath.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), becomeSellerPageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("becomeSellerPageTitle"));
 	}
 	
 	public void clickOnStartSelling() {
@@ -75,16 +69,16 @@ public class BecomeSellerPage {
 	public void AssertStartSellingPageTitle() {
 		
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(registerAndContinueBtnLocator)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("registerAndContinueBtnLocator"))));
 
 		
-		Assert.assertEquals(driver.getTitle(), startSellingPageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("startSellingPageTitle"));
 	}
 	
 	public void enterNumberAndEmail() {
 		
-		mobileNumberXpath.sendKeys(mobileNumber);
-		emailXpath.sendKeys(eMail);
+		mobileNumberXpath.sendKeys(ReadingTestDataFile.getProperty("mobileNumber"));
+		emailXpath.sendKeys(ReadingTestDataFile.getProperty("eMail"));
 	}
 	
 	public void clickOnRegisterAndContinue() {

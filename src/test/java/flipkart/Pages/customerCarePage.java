@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class customerCarePage {
 	
 	WebDriver driver;
@@ -44,9 +46,6 @@ public class customerCarePage {
 	
 	@FindBy(xpath = "//span[contains(text(),'Thank you for your feedback')]")
 	WebElement feedbackMessageXpath;
-	
-	//TestData
-	String customerCarePageTitle = "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!";
 	
 	public customerCarePage(WebDriver driver) {
 		
@@ -88,7 +87,7 @@ public class customerCarePage {
 		
 		Assert.assertTrue(customerCarePageHeader.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), customerCarePageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("customerCarePageTitle"));
 	}
 	
 	public void moveToInsuaranceHelpTopic() {

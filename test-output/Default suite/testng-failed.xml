@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="flipkart.TestCases.LoginTest">
+      <class name="flipkart.TestCases.AddToCartTest">
         <methods>
           <include name="status"/>
-          <include name="inValidCredentialsLogin"/>
           <include name="setup"/>
-          <include name="validCredentialsLogin"/>
+          <include name="removeFromCart"/>
         </methods>
-      </class> <!-- flipkart.TestCases.LoginTest -->
+      </class> <!-- flipkart.TestCases.AddToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

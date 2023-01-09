@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class DropdownProductSearchPage {
 	
 	WebDriver driver;
@@ -33,11 +35,6 @@ public class DropdownProductSearchPage {
 	@FindBy(xpath = "//h1[contains(text(),\"Men's Jackets\")]")
 	WebElement mensJacketPageHeaderXpath;
 	
-	//TestData
-	String selectedCategoryFromFashion = "Winter";
-	String winterCategoryLocator = "//a[contains(text(),'Winter')]";
-	String womanWinterCategory = "//a[contains(text(),\"Women's Sweaters & Cardigans\")]";
-	String mensJacketPageTile = "Jackets (जैकेट्स) - Upto 50% to 80% OFF on Latest Jackets For Men /Jerkins Online on Sale at Best Prices in India - Flipkart.com";
 	
 	public DropdownProductSearchPage(WebDriver driver) {
 			
@@ -71,6 +68,6 @@ public class DropdownProductSearchPage {
 		
 		Assert.assertTrue(mensJacketPageHeaderXpath.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), mensJacketPageTile);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("mensJacketPageTile"));
 	}
 }

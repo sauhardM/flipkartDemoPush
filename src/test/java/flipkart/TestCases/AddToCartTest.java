@@ -9,7 +9,7 @@ import flipkart.Pages.BasePage;
 
 public class AddToCartTest extends BasePage{
 
-	@Test(priority = 0,groups = {"HomePage"})
+//	@Test(priority = 0,groups = {"HomePage"})
 	public void addingProductToTheCart() throws Exception{
 		 
 		SearchProductTest obj = new SearchProductTest();  	
@@ -30,7 +30,7 @@ public class AddToCartTest extends BasePage{
 		addingProductToTheCart();
 		AddToCartPage obj2 = new AddToCartPage(driver);
 		obj2.AssertCartPage();
-		test.log(LogStatus.INFO, "Assertion passed");
+		test.log(LogStatus.INFO, "Assertion passed"); 
 		logger.info("Assertion passed");
 		obj2.clickOnRemoveProduct();
 		test.log(LogStatus.INFO, "Product removed from cart");

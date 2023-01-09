@@ -14,6 +14,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import Com.JarUtils.ReadingPropertiesFile;
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class SignUpPage {
 
 	WebDriver driver;
@@ -35,11 +38,6 @@ public class SignUpPage {
 	
 	@FindBy(xpath = "//button[@class='_2KpZ6l _2HKlqd _3AWRsL']")
 	WebElement coninueButtonXpath;
-	
-	//TestData
-	String newMemberBannerMessageLocator = "//span[contains(text(),\"Looks like you're new here!\")]";
-	String newMemberBannerMessage = "Looks like you're new here!";
-	String mobileNumber = "8604680845";
 	
 	
 	public SignUpPage(WebDriver driver) {
@@ -68,13 +66,14 @@ public class SignUpPage {
 	public void assertBannerMessage() {
 		
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(newMemberBannerMessageLocator)));
-		Assert.assertEquals(newMemberBannerMessageXpath.getText(), newMemberBannerMessage );
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("newMemberBannerMessageLocator"))));
+		
+		Assert.assertEquals(newMemberBannerMessageXpath.getText(), ReadingTestDataFile.getProperty("newMemberBannerMessage") );
 	}
 	
 	public void enterMobileNumber() {
 		
-		enterMobileNumberXpath.sendKeys(mobileNumber);
+		enterMobileNumberXpath.sendKeys(ReadingTestDataFile.getProperty("mobileNumber"));
 	}
 	
 	public void clickOnContinueButton() {

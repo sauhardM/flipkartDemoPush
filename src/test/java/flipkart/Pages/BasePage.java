@@ -24,9 +24,9 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
+import Com.JarUtils.ReadingPropertiesFile;
 import flipkart.Utilities.ExtentReportManager;
-import flipkart.Utilities.ReadingPropertiesFile;
+
 import flipkart.Utilities.Screenshot;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -49,7 +49,6 @@ public class BasePage {
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
 				logger.info("opening chrome browser.");
-//			    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
 			    WebDriverManager.chromedriver().setup();
 			    if (Mode.equalsIgnoreCase("Headless")) {
 					ChromeOptions options = new ChromeOptions();
@@ -62,7 +61,6 @@ public class BasePage {
 				}   
 			}
 			else if(browser.equalsIgnoreCase("edge")) {
-//				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
 				logger.info("opening edge browser.");
 				WebDriverManager.edgedriver().setup();
 				if (Mode.equalsIgnoreCase("Headless")) {
@@ -77,7 +75,6 @@ public class BasePage {
 				
 			}
 			else if(browser.equalsIgnoreCase("firefox")) {
-//				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
 				logger.info("opening firefox browser.");
 				WebDriverManager.firefoxdriver().setup();
 				if (Mode.equalsIgnoreCase("Headless")) {

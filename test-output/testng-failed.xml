@@ -3,14 +3,15 @@
 <suite name="Failed suite [flipkart]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Functional(failed)">
     <classes>
-      <class name="flipkart.TestCases.LoginTest">
+      <class name="flipkart.TestCases.SearchProductTest">
         <methods>
-          <include name="inValidCredentialsLogin"/>
           <include name="status"/>
+          <include name="openProduct"/>
+          <include name="searchProduct"/>
           <include name="setup"/>
-          <include name="validCredentialsLogin"/>
+          <include name="changePincode"/>
         </methods>
-      </class> <!-- flipkart.TestCases.LoginTest -->
+      </class> <!-- flipkart.TestCases.SearchProductTest -->
     </classes>
   </test> <!-- Functional(failed) -->
 </suite> <!-- Failed suite [flipkart] -->

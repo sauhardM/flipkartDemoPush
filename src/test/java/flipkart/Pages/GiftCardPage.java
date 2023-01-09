@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class GiftCardPage {
 
 	WebDriver driver;
@@ -41,11 +43,6 @@ public class GiftCardPage {
 	
 	@FindBy(xpath = "//img[@src='https://rukminim1.flixcart.com/flap/100/100/image/61b08c7fa14837b0.jpg?q=50']")
 	WebElement shopByRsXpath;
-	
-	//TestData
-	String giftCardPageTitle = "Flipkart Gift Cards: Buy Gift Cards & Gift Vouchers Online | Great Offers & Top Brands | Flipkart";
-	String birthdayGiftCardPageTitle = "Digital Gift Cards - Buy Digital Gift Cards Online at Best Prices In India | Flipkart.com";
-	String birthdayGiftCardPageHeaderLocator = "//h1[contains(text(),'Digital Gift Cards')]";
 	
 	
 	public GiftCardPage(WebDriver driver) {
@@ -75,7 +72,7 @@ public class GiftCardPage {
 		
 		Assert.assertTrue(giftCardPageHeaderXpath.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), giftCardPageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("giftCardPageTitle"));
 	}
 	
 	public void clickOnBirthdayGiftCards() {
@@ -90,12 +87,12 @@ public class GiftCardPage {
 	public void AssertBirthdayGiftCardPage() {
 		
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(birthdayGiftCardPageHeaderLocator)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("birthdayGiftCardPageHeaderLocator"))));
 
 		
 		Assert.assertTrue(birthdayGiftCardPageHeader.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), birthdayGiftCardPageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("birthdayGiftCardPageTitle"));
 	}
 	
 	public void scrollToShopByPrice() {

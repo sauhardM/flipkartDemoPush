@@ -5,8 +5,8 @@
     <classes>
       <class name="flipkart.TestCases.LoginTest">
         <methods>
-          <include name="status"/>
           <include name="inValidCredentialsLogin"/>
+          <include name="status"/>
           <include name="setup"/>
           <include name="validCredentialsLogin"/>
         </methods>

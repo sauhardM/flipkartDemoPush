@@ -15,6 +15,8 @@ import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class AddToCartPage {
 
 	WebDriver driver;
@@ -28,11 +30,6 @@ public class AddToCartPage {
 	@FindBy(xpath = "//div[@class='_3dsJAO' and contains(text(),'Remove')]")
 	WebElement removeBtnXpath;
 	
-	//TestData
-	String addToCart_BtnLocator = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww']";
-	String loginBtnLocator = "//a[contains(text(),'Login')]";
-	String placeOrderLocator = "//span[contains(text(),'Place Order')]";
-	String addToCartPageTitle = "Shopping Cart | Flipkart.com";
 	
 	
 	public AddToCartPage(WebDriver driver) {
@@ -60,15 +57,15 @@ public class AddToCartPage {
 	
 	public void AssertCartPage() throws Exception{
 		
-		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(placeOrderLocator)));
-		
 		Thread.sleep(5000);
 		
-		Assert.assertEquals(driver.getTitle(), addToCartPageTitle);
+//		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
+//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("placeOrderLocator"))));
+		
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("addToCartPageTitle"));
 	}
 	
-	public void clickOnRemoveProduct() {
+	public void clickOnRemoveProduct() { 
 		
 		JavascriptExecutor jse  = (JavascriptExecutor) driver;
 		

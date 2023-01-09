@@ -15,7 +15,7 @@ public class SignUpTest extends BasePage {
 		
 		SignUpPage obj = new SignUpPage(driver);
 		obj.closePopup();
-		test.log(LogStatus.INFO, "Closed popup");
+		test.log(LogStatus.INFO, "Closed popup"); 
 		logger.info("Closed popup");
 		obj.moveToElementLogin();
 		test.log(LogStatus.INFO, "cursor moved to login button");

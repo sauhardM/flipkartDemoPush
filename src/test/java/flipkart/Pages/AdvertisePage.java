@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class AdvertisePage {
 
 	WebDriver driver;
@@ -28,10 +30,6 @@ public class AdvertisePage {
 	
 	@FindBy(xpath = "//span[contains(text(),'Awareness Trend of')]")
 	WebElement brandPageHeader;
-	
-	//TestData
-	String advertisePageTitle = "Flipkart Brand Health, Brand Pulse, Flipkart Insights, Flipkart Advertising, Commerce Advertising Platform";
-	String Brand = "Samsung";
 	
 	public AdvertisePage(WebDriver driver) { 
 		
@@ -60,12 +58,12 @@ public class AdvertisePage {
 		
 		Assert.assertTrue(advertisePageHeaderXpath.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), advertisePageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("advertisePageTitle"));
 	}
 	
 	public void searchBrand() {
 		
-		brandCategorySearchXpath.sendKeys(Brand);
+		brandCategorySearchXpath.sendKeys(ReadingTestDataFile.getProperty("Brand"));
 	}
 	
 	public void selectBrand() {

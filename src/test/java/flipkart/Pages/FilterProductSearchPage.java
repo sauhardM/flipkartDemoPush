@@ -58,12 +58,6 @@ public class FilterProductSearchPage {
 	WebElement customerRatingXpath;
 	
 	
-	//TestData
-	String mensJacketPageHeaderLocator = "//h1[contains(text(),\\\"Men's Jackets\\\")]";
-	String customerRatingLocator = "//div[contains(text(),'Customer Ratings')]";
-	String flipkartAssuredLocator = "//img[@class='_3U-Vxu']";
-	String sizeLocator = "//div[contains(text(),'Size')]";
-	
 	public FilterProductSearchPage(WebDriver driver) {
 		
 		this.driver = driver;
@@ -136,7 +130,7 @@ public class FilterProductSearchPage {
 		Actions actions=new Actions(driver); 
 		
 		actions.dragAndDrop(priceBar,dropLocationPriceBar).build().perform();
-		
-	}
 	
+	}
+	 
 }

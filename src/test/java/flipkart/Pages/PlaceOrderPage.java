@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class PlaceOrderPage {
 	
 	WebDriver driver;
@@ -29,12 +31,6 @@ public class PlaceOrderPage {
 	WebElement enterMobileXpath;
 	
 	
-	//TestData
-	String removeBtnLocator = "//div[@class='_3dsJAO' and contains(text(),'Remove')]";
-	String PlaceOrderPageTitle = "Flipkart.com: Secure Payment: Login > Select Shipping Address > Review Order > Place Order";
-	String continueBtnLocator = "//span[contains(text(),'CONTINUE')]";
-	String mobileNumber ="8604680845";
-	
 	public PlaceOrderPage(WebDriver driver) {
 			
 			this.driver = driver;
@@ -44,7 +40,7 @@ public class PlaceOrderPage {
 	public void clickOnPlaceOrder() {
 		
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(removeBtnLocator)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("removeBtnLocator"))));
 		
 		JavascriptExecutor jse  = (JavascriptExecutor) driver;
 		
@@ -56,14 +52,14 @@ public class PlaceOrderPage {
 	public void AssertPlaceOrderPage() {
 		
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(continueBtnLocator)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("continueBtnLocator"))));
 		
-		Assert.assertEquals(driver.getTitle(), PlaceOrderPageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("PlaceOrderPageTitle"));
 	}
 	
 	public void enterMobileNumber() {
 		
-		enterMobileXpath.sendKeys(mobileNumber);
+		enterMobileXpath.sendKeys(ReadingTestDataFile.getProperty("mobileNumber"));
 	}
 
 	public void clickOnContinueBtn() {

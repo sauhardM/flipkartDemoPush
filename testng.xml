@@ -8,19 +8,19 @@
                 </run>
             </groups>-->
 <classes>
+ <class name="flipkart.TestCases.AdvertiseTest"/>
   <class name="flipkart.TestCases.LoginTest"/>
- <!--  <class name="flipkart.TestCases.SignUpTest"/>
-  <class name="flipkart.TestCases.SearchProductTest"/>
   <class name="flipkart.TestCases.AddToCartTest"/>
+  <class name="flipkart.TestCases.SignUpTest"/> 
+  <class name="flipkart.TestCases.SearchProductTest"/>
   <class name="flipkart.TestCases.BecomeSellerTest"/>
   <class name="flipkart.TestCases.PlaceOrderTest"/>
+  <class name="flipkart.TestCases.CareersTest"/>
   <class name="flipkart.TestCases.DropdownProductSearchTest"/>
   <class name="flipkart.TestCases.FilterProductSearchTest"/>
-  <class name="flipkart.TestCases.customerCareTest"/> 
-  <class name="flipkart.TestCases.FlipkartPlusTest"/>
-  <class name="flipkart.TestCases.AdvertiseTest"/>
   <class name="flipkart.TestCases.GiftCardTest"/>
-  <class name="flipkart.TestCases.CareersTest"/> -->
+  <class name="flipkart.TestCases.customerCareTest"/> 
+  <class name="flipkart.TestCases.FlipkartPlusTest"/> 
 </classes>
 </test>
 <!--  Test  -->

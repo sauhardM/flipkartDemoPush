@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import flipkart.Utilities.ReadingTestDataFile;
+
 public class CareersPage {
 
 	WebDriver driver;
@@ -32,9 +34,6 @@ public class CareersPage {
 	@FindBy(xpath = "/descendant::a[contains(text(),'Jobs @ India')][1]")
 	WebElement jobsAtIndia;
 	
-	//TestData
-	String careersPageTitle = "Flipkart - Careers";
-	String candidateLoginLocator = "//a[@id='candidate-login-before']";
 	
 	public CareersPage(WebDriver driver) {
 		
@@ -59,7 +58,7 @@ public class CareersPage {
 		careersXpath.click();
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(candidateLoginLocator)));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(ReadingTestDataFile.getProperty("candidateLoginLocator"))));
 	}
 	
 	public void assertCareerPage() throws Exception {
@@ -68,7 +67,7 @@ public class CareersPage {
 		
 		Assert.assertTrue(candidateLoginXpath.isDisplayed());
 		
-		Assert.assertEquals(driver.getTitle(), careersPageTitle);
+		Assert.assertEquals(driver.getTitle(), ReadingTestDataFile.getProperty("careersPageTitle"));
 	}
 	
 	public void moveToJobs() {
